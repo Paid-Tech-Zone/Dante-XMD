@@ -6,7 +6,6 @@
 <strong>DANTE XMD</strong>
 </p>
 <p align="center">
-<a href="https://github.com/c-o-d-e-xx/WhatsBixby/stargazers"><img src="https://img.shields.io/github/stars/?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
 <a href="https://github.com/c-o-d-e-xx/WhatsBixby/network/members"> <img src="https://img.shields.io/github/forks/c-o-d-e-xx/WhatsBixby?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 <a href="https://github.com/c-o-d-e-xx/WhatsBixby/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License- MIT license -blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.javascript.com"> <img src="https://img.shields.io/badge/Written%20in-Javascripy-skyblue?style=for-the-badge&logo=javascript" alt="javascript" /> </a>
