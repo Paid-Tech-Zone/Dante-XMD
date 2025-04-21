@@ -6,13 +6,13 @@
 <strong>DANTE XMD</strong>
 </p>
 <p align="center">
-<a href="https://github.com/c-o-d-e-xx/WhatsBixby/network/members"> <img src="https://img.shields.io/github/forks/c-o-d-e-xx/WhatsBixby?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
-<a href="https://github.com/c-o-d-e-xx/WhatsBixby/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License- MIT license -blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://github.com/Paid-Tech-Zone/Dante-XMD/network/members"> <img src="https://img.shields.io/github/forks/Paid-Tech-Zone/Dante-XMD?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/Paid-Tech-Zone/Dante-XMD/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License- MIT license -blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.javascript.com"> <img src="https://img.shields.io/badge/Written%20in-Javascripy-skyblue?style=for-the-badge&logo=javascript" alt="javascript" /> </a>
 <a href="https://nodejs.org/en"> <img src="https://img.shields.io/badge/FRAMEWORK-nodejs-green?style=for-the-badge&logo=nodejs" alt="javascript" /> </a>
 <a href="https://www.npmjs.com/package/@whiskeysockets/baileys/v/6.6.0"> <img src="https://img.shields.io/npm/v/@whiskeysockets/baileys?color=white&label=baileys&logo=javascript&logoColor=blue&style=for-the-badge" /></a>
-<a href="https://github.com/c-o-d-e-xx/WhatsBixby"> <img src="https://img.shields.io/github/repo-size/c-o-d-e-xx/WhatsBixby?color=skyblue&logo=github&logoColor=blue&style=for-the-badge" /></a>
-<a href="https://github.com/c-o-d-e-xx/WhatsBixby/commits/master"> <img src="https://img.shields.io/github/last-commit/c-o-d-e-xx/WhatsBixby?color=black&logo=github&logoColor=black&style=for-the-badge&branch=master" /></a>
+<a href="https://github.com/Paid-Tech-Zone/Dante-XMD"> <img src="https://img.shields.io/github/repo-size/c-o-d-e-xx/WhatsBixby?color=skyblue&logo=github&logoColor=blue&style=for-the-badge" /></a>
+<a href="https://github.com/Paid-Tech-Zone/Dante-XMD/commits/master"> <img src="https://img.shields.io/github/last-commit/Paid-Tech-Zone/Dante-XMD?color=black&logo=github&logoColor=black&style=for-the-badge&branch=master" /></a>
 </p>
 <br><br>
 ### What is Dante Xmd?
