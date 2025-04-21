@@ -1,10 +1,6 @@
 <p align="center">
-  <a href="https://www.instagram.com/lil_crone01/"><img src="https://i.ibb.co/Mx0JFLWB/IMG-20250420-WA0011.jpg" width="500" alt="Profile"/> </a>
-</p>
+  <a href="https://github.com/Paid-Tech-Zone"><img src="https://i.ibb.co/wrQ3Ndrs/IMG-20250420-WA0014.jpg" width="250" height="250" alt="DANTE XMD"/></a>
 
-<p align="center">
-<strong>DANTE XMD</strong>
-</p>
 <p align="center">
 <a href="https://github.com/Paid-Tech-Zone/Dante-XMD/network/members"> <img src="https://img.shields.io/github/forks/Paid-Tech-Zone/Dante-XMD?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 <a href="https://github.com/Paid-Tech-Zone/Dante-XMD/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License- MIT license -blueviolet?style=for-the-badge" alt="License" /> </a>
