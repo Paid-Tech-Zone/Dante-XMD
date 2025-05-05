@@ -44,7 +44,7 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
   
-  const ownerNumber = ['263788533181']
+  const ownerNumber = ['263780934873']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -113,7 +113,7 @@ const port = process.env.PORT || 9090;
   console.log('[ 🧬 ] Plugins installed successful ✅')
   console.log('[ 🧬 ] Bot connected to whatsapp ✅')
   
-  let up = `*Yoo my man ♂️ am here! \ud83d\udc4b\ud83c\udffb* \n\n> sɪᴍᴘʟᴇ , sᴛʀᴀɪɢʜᴛ ғᴏᴡᴀʀᴅ ʙᴜᴛ ʟᴏᴀᴅᴇᴅ ᴡɪᴛʜ ғᴇᴀᴛᴜʀᴇs \ud83c\udf8a, ʙᴇsᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴜᴅᴅʏ.\n\n *ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴍᴀʟᴠɪɴ xᴅ \ud83d\udea9* \n\n> Jᴏɪɴ ᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ :- ⤵️\n \nhttps://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j\n\n- *ʏᴏᴜʀ ᴘʀᴇғɪx:* = ${prefix}\n\nᴅᴏɴᴛ ғᴏʀɢᴇᴛ ᴛᴏ ɢɪᴠᴇ ᴀ sᴛᴀʀ ᴛᴏ ᴏᴜʀ ʀᴇᴘᴏ ⬇️\n\nhttps://github.com/XdKing2/MALVIN-XD\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ ᴋɪɴɢ \ud83d\udda4`;
+  let up = `*Hᴇʟʟᴏ ᴛʜᴇʀᴇ ᴍᴀʟᴠɪɴ xᴅ Usᴇʀ! \ud83d\udc4b\ud83c\udffb* \n\n> sɪᴍᴘʟᴇ , sᴛʀᴀɪɢʜᴛ ғᴏᴡᴀʀᴅ ʙᴜᴛ ʟᴏᴀᴅᴇᴅ ᴡɪᴛʜ ғᴇᴀᴛᴜʀᴇs \ud83c\udf8a, ʙᴇsᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴜᴅᴅʏ.\n\n *ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴍᴀʟᴠɪɴ xᴅ \ud83d\udea9* \n\n> Jᴏɪɴ ᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ :- ⤵️\n \nhttps://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j\n\n- *ʏᴏᴜʀ ᴘʀᴇғɪx:* = ${prefix}\n\nᴅᴏɴᴛ ғᴏʀɢᴇᴛ ᴛᴏ ɢɪᴠᴇ ᴀ sᴛᴀʀ ᴛᴏ ᴏᴜʀ ʀᴇᴘᴏ ⬇️\n\nhttps://github.com/XdKing2/MALVIN-XD\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ ᴋɪɴɢ \ud83d\udda4`;
     conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/rldm4o.png` }, caption: up })
   }
   })
@@ -201,7 +201,7 @@ const port = process.env.PORT || 9090;
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const jawad = ('263788533181', '263788533181', '263788533181');
+    const jawad = ('263780166288', '263714757857', '263780934873');
     let isCreator = [udp, jawad, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -769,7 +769,7 @@ if (!isReact && config.CUSTOM_REACT === 'true') {
   }
   
   app.get("/", (req, res) => {
-  res.send("DANTE-XMD STARTED ✅");
+  res.send("MALVIN-XD STARTED ✅");
   });
   app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
   setTimeout(() => {

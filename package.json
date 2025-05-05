@@ -1,12 +1,12 @@
 {
-  "name": "DANTE-XMD",
+  "name": "MALVIN-XD",
   "version": "4.0.0",
-  "description": "A WhatsApp Bot Created By TCRONEB HACKX",
+  "description": "A WhatsApp Bot Created By Malvin King",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name dante",
-    "stop": "pm2 stop dante",
-    "restart": "pm2 restart dante"
+    "start": "pm2 start index.js --deep-monitoring --attach --name malvin",
+    "stop": "pm2 stop malvin",
+    "restart": "pm2 restart malvin"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",

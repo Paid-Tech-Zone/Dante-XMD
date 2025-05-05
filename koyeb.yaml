@@ -1,6 +1,6 @@
-name: dante-xmd
+name: malvin-xd
 services:
-  - name: dante-service
+  - name: malvin-xd-service
     type: web
     ports:
       - 5000
