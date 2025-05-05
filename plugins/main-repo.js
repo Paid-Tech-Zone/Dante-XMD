@@ -11,7 +11,7 @@ malvin({
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/XdKing2/MALVIN-XD';
+    const githubRepoURL = 'https://github.com/Paid-Tech-Zone/Dante-XMD';
 
     try {
         const [, username, repoName] = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
