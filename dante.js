@@ -12,9 +12,9 @@ function malvin(info, func) {
     return data;
 }
 module.exports = {
-    malvin,
-    AddCommand:malvin,
-    Function:malvin,
-    Module:malvin,
+    dante,
+    AddCommand:dante,
+    Function:dante,
+    Module:dante,
     commands,
 };
