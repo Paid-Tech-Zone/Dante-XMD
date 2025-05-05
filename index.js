@@ -44,7 +44,7 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
   
-  const ownerNumber = ['263780934873']
+  const ownerNumber = ['263788533181']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
   if (!fs.existsSync(tempDir)) {
@@ -68,7 +68,7 @@ const {
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.replace("malvin~", '');
+const sessdata = config.SESSION_ID.replace("dante~", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -113,7 +113,7 @@ const port = process.env.PORT || 9090;
   console.log('[ 🧬 ] Plugins installed successful ✅')
   console.log('[ 🧬 ] Bot connected to whatsapp ✅')
   
-  let up = `*Hᴇʟʟᴏ ᴛʜᴇʀᴇ ᴍᴀʟᴠɪɴ xᴅ Usᴇʀ! \ud83d\udc4b\ud83c\udffb* \n\n> sɪᴍᴘʟᴇ , sᴛʀᴀɪɢʜᴛ ғᴏᴡᴀʀᴅ ʙᴜᴛ ʟᴏᴀᴅᴇᴅ ᴡɪᴛʜ ғᴇᴀᴛᴜʀᴇs \ud83c\udf8a, ʙᴇsᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴜᴅᴅʏ.\n\n *ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴍᴀʟᴠɪɴ xᴅ \ud83d\udea9* \n\n> Jᴏɪɴ ᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ :- ⤵️\n \nhttps://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j\n\n- *ʏᴏᴜʀ ᴘʀᴇғɪx:* = ${prefix}\n\nᴅᴏɴᴛ ғᴏʀɢᴇᴛ ᴛᴏ ɢɪᴠᴇ ᴀ sᴛᴀʀ ᴛᴏ ᴏᴜʀ ʀᴇᴘᴏ ⬇️\n\nhttps://github.com/XdKing2/MALVIN-XD\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ ᴋɪɴɢ \ud83d\udda4`;
+  let up = `*Yoo my man ♂️ am here! \ud83d\udc4b\ud83c\udffb* \n\n> sɪᴍᴘʟᴇ , sᴛʀᴀɪɢʜᴛ ғᴏᴡᴀʀᴅ ʙᴜᴛ ʟᴏᴀᴅᴇᴅ ᴡɪᴛʜ ғᴇᴀᴛᴜʀᴇs \ud83c\udf8a, ʙᴇsᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴜᴅᴅʏ.\n\n *ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ ᴍᴀʟᴠɪɴ xᴅ \ud83d\udea9* \n\n> Jᴏɪɴ ᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ :- ⤵️\n \nhttps://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j\n\n- *ʏᴏᴜʀ ᴘʀᴇғɪx:* = ${prefix}\n\nᴅᴏɴᴛ ғᴏʀɢᴇᴛ ᴛᴏ ɢɪᴠᴇ ᴀ sᴛᴀʀ ᴛᴏ ᴏᴜʀ ʀᴇᴘᴏ ⬇️\n\nhttps://github.com/XdKing2/MALVIN-XD\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ ᴋɪɴɢ \ud83d\udda4`;
     conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/rldm4o.png` }, caption: up })
   }
   })
