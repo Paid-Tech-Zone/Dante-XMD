@@ -1,9 +1,9 @@
 const axios = require("axios");
 const fetch = require("node-fetch");
 const { sleep } = require('../lib/functions');
-const { cmd, commands } = require("../command");
+const { malvin, commands } = require("../malvin");
 
-cmd({
+malvin({
   pattern: "joke",
   desc: "😂 Get a random joke",
   react: "🤣",
@@ -18,7 +18,7 @@ cmd({
       return reply("❌ Failed to fetch a joke. Please try again.");
     }
 
-    const jokeMessage = `🤣 *Here's a random joke for you!* 🤣\n\n*${joke.setup}*\n\n${joke.punchline} 😆\n\n> *Created by Your Name🎐*`;
+    const jokeMessage = `🤣 *Here's a random joke for you!* 🤣\n\n*${joke.setup}*\n\n${joke.punchline} 😆\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴇᴍᴏᴛɪᴏɴʟᴇss ᴋɪɴɢ 🖤`;
 
     return reply(jokeMessage);
   } catch (error) {
@@ -29,7 +29,7 @@ cmd({
 
 // flirt
 
-cmd({
+malvin({
     pattern: "flirt",
     alias: ["masom", "line"],
     desc: "Get a random flirt or pickup line.",
@@ -69,7 +69,7 @@ async (conn, mek, m, { from, reply }) => {
 
 //truth
 
-cmd({
+malvin({
     pattern: "truth",
     alias: ["truthquestion"],
     desc: "Get a random truth question from the API.",
@@ -108,7 +108,7 @@ async (conn, mek, m, { from, reply }) => {
 
 // dare
 
-cmd({
+malvin({
     pattern: "dare",
     alias: ["truthordare"],
     desc: "Get a random dare from the API.",
@@ -151,7 +151,7 @@ async (conn, mek, m, { from, reply }) => {
     }
 });
 
-cmd({
+malvin({
   pattern: "fact",
   desc: "🧠 Get a random fun fact",
   react: "🧠",
@@ -166,8 +166,8 @@ cmd({
       return reply("❌ Failed to fetch a fun fact. Please try again.");
     }
 
-    const factMessage = `🧠 *Random Fun Fact* 🧠\n\n${fact}\n\nIsn't that interesting? 😄\n\n> *Powered by your name *`;
-
+    const factMessage = `🧠 *Random Fun Fact* 🧠\n\n${fact}\n\nIsn't that interesting? 😄\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴇᴍᴏᴛɪᴏɴʟᴇss ᴋɪɴɢ 🖤`;
+    
     return reply(factMessage);
   } catch (error) {
     console.error("❌ Error in fact command:", error);
@@ -175,7 +175,7 @@ cmd({
   }
 });
 
-cmd({
+malvin({
     pattern: "pickupline",
     alias: ["pickup"],
     desc: "Get a random pickup line from the API.",
@@ -198,7 +198,7 @@ async (conn, mek, m, { from, reply }) => {
         console.log('JSON response:', json);
 
         // Format the pickup line message
-        const pickupLine = `*Here's a pickup line for you:*\n\n"${json.pickupline}"\n\n> *Powered by your name 🎐*`;
+        const pickupLine = `*Here's a pickup line for you:*\n\n"${json.pickupline}"\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴇᴍᴏᴛɪᴏɴʟᴇss ᴋɪɴɢ 🖤`;
 
         // Send the pickup line to the chat
         await conn.sendMessage(from, { text: pickupLine }, { quoted: m });
@@ -211,7 +211,7 @@ async (conn, mek, m, { from, reply }) => {
 
 // char
 
-cmd({
+malvin({
     pattern: "character",
     alias: ["char"],
     desc: "Check the character of a mentioned user.",
@@ -272,7 +272,7 @@ async (conn, mek, m, { from, isGroup, text, reply }) => {
     }
 });
 
-cmd({
+malvin({
   pattern: "repeat",
   alias: ["rp", "rpm"],
   desc: "Repeat a message a specified number of times.",
@@ -305,8 +305,8 @@ cmd({
   }
 });
 
-cmd({
-  pattern: "spam",
+malvin({
+  pattern: "send",
   desc: "Send a message multiple times, one by one.",
   category: "fun",
   filename: __filename
@@ -348,7 +348,7 @@ cmd({
   }
 });
 
-cmd({
+malvin({
   pattern: "readmore",
   alias: ["rm", "rmore", "readm"],
   desc: "Generate a Read More message.",
