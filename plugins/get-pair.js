@@ -1,13 +1,13 @@
-const { malvin, commands } = require('../malvin');
+const { malvin, commands } = require('../dante');
 const axios = require('axios');
 
 malvin({
     pattern: "pair",
     alias: ["getpair", "clonebot"],
     react: "✅",
-    desc: "Get pairing code for XD bot",
+    desc: "Get pairing code for XMD bot",
     category: "download",
-    use: ".pair +26377868XXX",
+    use: ".pair +263788533XXX",
     filename: __filename
 }, async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
@@ -27,7 +27,7 @@ malvin({
         }
 
         const pairingCode = response.data.code;
-        const doneMessage = "> *MALVIN-XD PAIRING COMPLETED*";
+        const doneMessage = "> *DANTE-XMD PAIRING COMPLETED*";
 
         // Send initial message with formatting
         await reply(`${doneMessage}\n\n*Your pairing code is:* ${pairingCode}`);
@@ -49,9 +49,9 @@ malvin({
     pattern: "pair2",
     alias: ["getpair2", "clonebot2"],
     react: "✅",
-    desc: "Get pairing code for MALVIN-XD bot",
+    desc: "Get pairing code for DANTE-XMD bot",
     category: "download",
-    use: ".pair +2637582XXX",
+    use: ".pair +263788533XX",
     filename: __filename
 }, async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
@@ -71,7 +71,7 @@ malvin({
         }
 
         const pairingCode = response.data.code;
-        const doneMessage = "> *MALVIN-XD PAIRING COMPLETED*";
+        const doneMessage = "> *DANTE-XMD PAIRING COMPLETED*";
 
         // Send initial message with formatting
         await reply(`${doneMessage}\n\n*Your pairing code is:* ${pairingCode}`);
