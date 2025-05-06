@@ -1,12 +1,12 @@
 {
-  "name": "Ikuze",
+  "name": "DANTE-XMD",
   "version": "1.1.0",
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name ikuze",
-    "stop": "pm2 stop ikuze",
-    "restart": "pm2 restart ikuze"
+    "start": "pm2 start index.js --deep-monitoring --attach --name dante",
+    "stop": "pm2 stop dante",
+    "restart": "pm2 restart dante"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.6.0",
