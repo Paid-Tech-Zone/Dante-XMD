@@ -1,21 +1,55 @@
-const config = require('../config')
-const {eypz , commands} = require('../command')
-const {sleep} = require('../lib/functions')
+const config = require('../config');
+const { cmd } = require('../command');
+const { exec } = require('child_process');
 
-eypz({
+cmd({
     pattern: "restart",
-    desc: "restart the bot",
+    react: "⚡",
+    alias: ["reboot"],
+    desc: "Quick restart bot (Owner/Sudo only)",
     category: "owner",
     filename: __filename
 },
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-const {exec} = require("child_process")
-reply("_*restarting...📍*_")
-await sleep(1500)
-exec("pm2 restart all")
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
+async (conn, mek, m, { from, sender, reply, isOwner, isSudo }) => {
+    try {
+        // Authorization check
+        if (!isOwner && !config.SUDO?.includes(sender.split('@')[0])) {
+            return reply("❌ *Access Denied!* Owner/SUDO only");
+        }
+
+        // Newsletter context
+        const newsletterContext = {
+            mentionedJid: [sender],
+            forwardingScore: 999,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363292876277898@newsletter',
+                newsletterName: "𝐇𝐀𝐍𝐒 𝐁𝐘𝐓𝐄 𝐌𝐃",
+                serverMessageId: Math.floor(Math.random() * 1000),
+            }
+        };
+
+        // Fast restart notification
+        await conn.sendMessage(
+            from,
+            {
+                text: "⚡ *Quick Restart Initiated*\n_Bot will reboot in 3 seconds..._\n\n• HANS BYTE MD •",
+                contextInfo: newsletterContext
+            },
+            { quoted: mek }
+        );
+
+        // Immediate restart process (no unnecessary delays)
+        setTimeout(() => {
+            exec('pm2 restart all &', (error) => { // Run in background
+                if (error) {
+                    exec('node . &'); // Fallback
+                }
+            });
+        }, 1500); // Just enough time to send confirmation
+
+    } catch (e) {
+        console.error('Fast restart error:', e);
+        // No reply here since bot may be restarting
+    }
+});
