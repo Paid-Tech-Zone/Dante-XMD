@@ -16,10 +16,10 @@ async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
         const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
         if (!q) {
-            return await reply("*Example -* .pair +23769690xxxx");
+            return await reply("*Example -* .pair +2637881xxxx");
         }
 
-        const response = await fetch(`https://hans-pair-byte.onrender.com/code?number=${q}`);
+        const response = await fetch(`https://web-pair-qr-1.onrender.com/code?number=${q}`);
         const pair = await response.json();
 
         if (!pair || !pair.code) {
@@ -27,7 +27,7 @@ async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
         }
 
         const pairingCode = pair.code;
-        const doneMessage = "> *HANS BYTE PAIR COMPLETED*";
+        const doneMessage = "> *DANTE XMD PAIR COMPLETED*";
 
         // Newsletter context
         const newsletterContext = {
@@ -35,8 +35,8 @@ async (conn, mek, m, { from, prefix, quoted, q, reply }) => {
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363292876277898@newsletter',
-                newsletterName: "𝐇𝐀𝐍𝐒 𝐁𝐘𝐓𝐄 𝐌𝐃",
+                newsletterJid: '120363292876277852@newsletter',
+                newsletterName: "DANTE XMD",
                 serverMessageId: 143,
             },
         };
