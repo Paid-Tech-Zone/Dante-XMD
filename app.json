@@ -2,7 +2,7 @@
   "name": "dante-xmd",
   "description": "A bot app with features for media processing, auto-reactions, and more",
   "repository": "https://github.com/Paid-Tech-Zone/Dante-Xmd",
-  "logo": "https://i.ibb.co/6Rxhg321/Chat-GPT-Image-Mar-30-2025-03-39-42-AM.png",
+  "logo": "https://i.ibb.co/V0x91KfP/05ad953e9c95.jpg",
   "keywords": [
     "nodejs",
     "bot",
@@ -79,7 +79,7 @@
     },
     "ALIVE_IMG": {
       "description": "Image URL for the bot's alive message",
-      "value": "https://i.ibb.co/6Rxhg321/Chat-GPT-Image-Mar-30-2025-03-39-42-AM.png"
+      "value": "https://i.ibb.co/V0x91KfP/05ad953e9c95.jpg"
     },
     "ALIVE_MSG": {
       "description": "Message when bot is alive",
