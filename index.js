@@ -41,7 +41,7 @@ const ownerNumber = config.OWNER_NUM;
 if (!fs.existsSync(__dirname + "/sessions/creds.json")) {
   if (!config.SESSION_ID)
     return console.log("Please add your session to SESSION_ID env !!");
-  const sessdata = config.SESSION_ID.replace('DANTE~ ', '');
+  const sessdata = config.SESSION_ID.replace('DANTE-XMD~ ', '');
   const filer = File.fromURL(`https://mega.nz/file/${sessdata}`);
   filer.download((err, data) => {
     if (err) throw err;
@@ -96,7 +96,7 @@ async function connectToWA() {
         }
       });
       console.log("ALL PLUGINS SUCCESFULLY INSTALLED   ✅");
-      console.log("DANTE XMDHAS SUCCESFULLY BEEN CONNECTED TO YOUR WHATSAPP ✅");
+      console.log("DANTE XMD HAS SUCCESFULLY BEEN CONNECTED TO YOUR WHATSAPP ✅");
 
       let up = `
   ╔═════════════════╗
