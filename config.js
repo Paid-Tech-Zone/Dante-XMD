@@ -51,7 +51,7 @@ module.exports = {
   WELCOME: process.env.WELCOME || "true",
 
   // Alive Message & Image
-  ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/6Rxhg321/Chat-GPT-Image-Mar-30-2025-03-39-42-AM.png", // Add your alive image URL here
+  ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/V0x91KfP/05ad953e9c95.jpg", // Add your alive image URL here
   ALIVE_MSG: process.env.ALIVE_MSG || "Hello , I am alive now!!", // Customize the alive message here
 
   // Sticker Settings
@@ -63,6 +63,6 @@ module.exports = {
   USER_PP_SIZE: process.env.USER_PP_SIZE || 640, // Set the user profile picture size here
 
   // Miscellaneous
-  GITHUB: process.env.GITHUB || "zwcoder263", // Add your GitHub username here
+  GITHUB: process.env.GITHUB || "Paid-Tech-Zone", // Add your GitHub username here
   TIMEZONE: process.env.TIMEZONE || "𝙒𝘼𝙏+1" // Set your timezone here (e.g., "WAT+1")
 };
