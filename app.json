@@ -1,7 +1,7 @@
 {
   "name": "dante-xmd",
   "description": "A bot app with features for media processing, auto-reactions, and more",
-  "repository": "https://github.com/zwcoder-263/Dante-Xmd",
+  "repository": "https://github.com/Paid-Tech-Zone/Dante-Xmd",
   "logo": "https://i.ibb.co/6Rxhg321/Chat-GPT-Image-Mar-30-2025-03-39-42-AM.png",
   "keywords": [
     "nodejs",
@@ -103,7 +103,7 @@
     },
     "GITHUB": {
       "description": "GitHub username",
-      "value": "zwcoder263"
+      "value": "Paid-Tech-Zone"
     },
     "TIMEZONE": {
       "description": "Timezone",
